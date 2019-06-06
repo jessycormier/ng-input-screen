@@ -114,6 +114,41 @@
           }
         }
       }
+    },
+    "ng-input-screen": {
+      "projectType": "library",
+      "root": "projects/ng-input-screen",
+      "sourceRoot": "projects/ng-input-screen/src",
+      "prefix": "ngis",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-input-screen/tsconfig.lib.json",
+            "project": "projects/ng-input-screen/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-input-screen/src/test.ts",
+            "tsConfig": "projects/ng-input-screen/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-input-screen/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-input-screen/tsconfig.lib.json",
+              "projects/ng-input-screen/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "input-screen"
 }

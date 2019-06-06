@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-input-screen": [
+        "dist/ng-input-screen"
+      ],
+      "ng-input-screen/*": [
+        "dist/ng-input-screen/*"
+      ]
+    }
   }
 }
