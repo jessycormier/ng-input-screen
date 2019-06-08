@@ -1,6 +1,20 @@
 {
   "name": "ng-input-screen",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "author": {
+    "name": "Jessy Cormier",
+    "url": "https://jessy.co",
+    "email": "jessycormier@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jessycormier/ng-input-screen"
+  },
+  "homepage": "https://github.com/jessycormier/ng-input-screen",
+  "keywords": [
+    "Angular", "input", "mask", "screen"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"
