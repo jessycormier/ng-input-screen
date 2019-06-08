@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build --project=ng-input-screen",
     "test": "ng test",
+    "test:lib": "ng test --project=ng-input-screen",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
