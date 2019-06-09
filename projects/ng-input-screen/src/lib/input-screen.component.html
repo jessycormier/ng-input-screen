@@ -1,6 +1,10 @@
 <input
-  #inputScreen
   type="text"
   [attr.placeholder]="screen"
+  [ngClass]="ngClass"
   (blur)="onBlur(inputScreen)"
-  (focus)="onFocus(inputScreen)">
+  (focus)="onFocus(inputScreen)"
+  (keydown)="onKeydown($event)"
+  (keypress)="onKeypress($event)"
+  (keyup)="onKeyup($event)"
+  #inputScreen>

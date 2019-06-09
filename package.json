@@ -1,6 +1,7 @@
 {
   "name": "input-screen",
-  "version": "0.0.0",
+  "version": "0.0.2",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,6 +12,19 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "author": {
+    "name": "Jessy Cormier",
+    "url": "https://jessy.co",
+    "email": "jessycormier@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jessycormier/ng-input-screen"
+  },
+  "homepage": "https://github.com/jessycormier/ng-input-screen",
+  "keywords": [
+    "Angular", "input", "mask", "screen"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.0.0",

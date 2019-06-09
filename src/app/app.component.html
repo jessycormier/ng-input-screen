@@ -1,4 +1,5 @@
 <h1>Screen Input</h1>
+
 <div>
   <div>
     <strong>Input Screen</strong>
@@ -6,6 +7,7 @@
   <ng-input-screen #ngis1></ng-input-screen> value: {{ ngis1.value }}
 </div>
 <br>
+
 <div>
   <div>
     <strong>Input Screen (value provided)</strong>
@@ -13,10 +15,35 @@
   <ng-input-screen #ngis2 value="hello, world"></ng-input-screen> value: {{ ngis2.value }}
 </div>
 <br>
+
 <div>
   <div>
     <strong>Input Screen (value provided)</strong>
   </div>
   <ng-input-screen #ngis3 screenCharacter="🚀" value="Rocket"></ng-input-screen> value: {{ ngis3.value }}
-
 </div>
+<br>
+
+<div>
+  <div>
+    <strong>Input Screen (ngClass)</strong>
+  </div>
+  <style>
+    .input-pre-style::placeholder { transition: 800ms; }
+    .input-style {
+      transition: 500ms;
+      border: solid 1px #fefefe;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+    .input-style:focus {
+      color: steelblue;
+    }
+    .input-style::placeholder { color: coral; }
+  </style>
+  <label for="thickBoarder">
+      <input type="checkbox" id="thickBoarder" #addCssClasses (click)="1===1"> Add css classes.
+  </label>
+  <br><br>
+  <ng-input-screen #ngis4 value="css class adds shadow" [ngClass]="{ 'input-pre-style': true, 'input-style': addCssClasses.checked }"></ng-input-screen>
+</div>
+<br>
