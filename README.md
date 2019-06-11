@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/ng-input-screen.svg)](https://badge.fury.io/js/ng-input-screen)
+[![CircleCI](https://circleci.com/gh/jessycormier/ng-input-screen.svg?style=shield)](https://circleci.com/gh/jessycormier/ng-input-screen)
 
 # InputScreen
 
